@@ -5,7 +5,7 @@ function GradeTable(props) {
 
   const tempArr = props.gradeSent.map((element, index) => <Grade key={index} sending={element}/>);
   return (
-    <table className="table table-hover">
+    <table className="table table-hover tableStyle">
       <thead>
         <tr>
           <th scope="col">Name</th>
