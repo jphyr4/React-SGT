@@ -48,38 +48,46 @@ export default class GradeForm extends React.Component {
         onSubmit={this.handleSubmit}
         onReset={this.handleReset}
       >
-        <i className="fas fa-user"></i>
-        <input
-          name="name"
-          onChange={this.handleChange}
-          value={namevalue}
-          type="text"
-          className="form-group col-md-4"
-          placeholder="Name"
-        />
+        <div className="form-group float-right col-md-4">
+          <i className="fas fa-user"></i>
+          <input
+            name="name"
+            onChange={this.handleChange}
+            value={namevalue}
+            type="text"
+            className="form-control"
+            placeholder="Name"
+          />
+        </div>
 
-        <i className="fas fa-book"></i>
-        <input
-          name="course"
-          onChange={this.handleChange}
-          value={coursevalue}
-          type="text"
-          className="form-group col-md-4"
-          placeholder="course"
-        />
-        <i className="fas fa-graduation-cap"></i>
-        <input
-          name="grade"
-          onChange={this.handleChange}
-          value={gradevalue}
-          type="number"
-          className="form-group col-md-4"
-          placeholder="Grade"
-        />
-        <button type="reset" className="btn btn-danger mb-2 ">
+        <div className="form-group float-right col-md-4">
+          <i className="fas fa-book"></i>
+          <input
+            name="course"
+            onChange={this.handleChange}
+            value={coursevalue}
+            type="text"
+            className="form-control"
+            placeholder="course"
+          />
+        </div>
+
+        <div className="form-group float-right col-md-4">
+          <i className="fas fa-graduation-cap"></i>
+          <input
+            name="grade"
+            onChange={this.handleChange}
+            value={gradevalue}
+            type="number"
+            className="form-control"
+            placeholder="Grade"
+          />
+        </div>
+
+        <button type="reset" className="btn btn-danger mb-2 float-right">
           Cancel
         </button>
-        <button type="submit" className="btn btn-primary mb-2 ">
+        <button type="submit" className="btn btn-primary mb-2 float-right">
           Add
         </button>
       </form>
