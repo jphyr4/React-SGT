@@ -1,0 +1,20 @@
+.tableStyle{
+  float: left;
+  width: 80%;
+}
+
+.inputForms input{
+
+  display: block;
+  width: 15%;
+
+}
+
+.inputForms i{
+      float: left;
+    height: 15px;
+    width: 30px;
+    padding-top: 11px;
+    padding-left: 6px;
+
+}
