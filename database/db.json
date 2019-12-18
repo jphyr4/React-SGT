@@ -19,16 +19,40 @@
       "id": 3
     },
     {
-      "name": "sdfs",
-      "course": "sdfs",
-      "grade": 34,
-      "id": 18
+      "name": "Ziyaad",
+      "course": "Algorithm & Design",
+      "grade": 92,
+      "id": 5
     },
     {
-      "name": "jake",
-      "course": "sdfs",
-      "grade": 54,
-      "id": 19
+      "name": "Jake Hassler",
+      "course": "Algorithm & Design",
+      "grade": 98,
+      "id": 6
+    },
+    {
+      "name": "Khoa",
+      "course": "Algorithm & Design",
+      "grade": 87,
+      "id": 7
+    },
+    {
+      "name": "Kris",
+      "course": "JavaScript",
+      "grade": 94,
+      "id": 8
+    },
+    {
+      "name": "Jan",
+      "course": "JavaScript",
+      "grade": 83,
+      "id": 9
+    },
+    {
+      "name": "Vicky",
+      "course": "JavaScript",
+      "grade": 93,
+      "id": 10
     }
   ]
 }
