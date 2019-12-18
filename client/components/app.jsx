@@ -12,6 +12,7 @@ export default class App extends React.Component {
     this.addRecord = this.addRecord.bind(this);
     this.getAverageGrade = this.getAverageGrade.bind(this);
     this.getGrades = this.getGrades.bind(this);
+    this.deleteGrade = this.deleteGrade.bind(this);
   }
 
   componentDidMount() {
@@ -39,6 +40,18 @@ export default class App extends React.Component {
       .catch(err => console.error('Fetch failed!', err));
   }
 
+  deleteGrade(id) {
+    const array = [...this.state.grades];
+    const index = array.findIndex(x => x.id === id);
+    array.splice(index, 1);
+    fetch(`/api/grades/${id}`, {
+      headers: { 'Content-Type': 'application/json' },
+      method: 'DELETE'
+    }).then(response => response.json())
+      .then(data => this.setState({ grades: array }))
+      .catch(err => console.error('Get All Grades fetch failed', err));
+  }
+
   getAverageGrade() {
 
     var total = 0;
@@ -60,7 +73,7 @@ export default class App extends React.Component {
     return (
       <div>
         <Header newProp = {this.getAverageGrade()}/>
-        <GradeTable gradeSent={this.state.grades}/>
+        <GradeTable gradeSent={this.state.grades} deleteProp={this.deleteGrade}/>
         <GradeForm newRecord={this.addRecord}/>
 
       </div>
