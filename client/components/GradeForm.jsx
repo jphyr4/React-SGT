@@ -88,7 +88,7 @@ export default class GradeForm extends React.Component {
                 placeholder="Grade"
               />
             </div>
-            <div className="col btn-toolbar ">
+            <div className="col btn-toolbar justify-content-center">
               <button type="reset" className="btn btn-danger mb-2 mr-2 hideButton buttonMargin">
             Cancel
               </button>

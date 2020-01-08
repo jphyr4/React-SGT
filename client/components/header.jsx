@@ -3,7 +3,7 @@ import React from 'react';
 function Header(props) {
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top navHeight centerHead">
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top navHeight centerHead">
       <h3 className="col-10 centerTitle">Student Grade Table</h3>
       <h5 className="col-2 text-center hideAvg">Average: {props.newProp}</h5>
     </nav>

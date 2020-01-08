@@ -119,6 +119,12 @@
       "course": "UI Design",
       "grade": 89,
       "id": 22
+    },
+    {
+      "name": "Heath",
+      "course": "UI Design",
+      "grade": 78,
+      "id": 24
     }
   ]
 }
