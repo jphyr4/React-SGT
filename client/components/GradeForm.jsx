@@ -28,6 +28,17 @@ export default class GradeForm extends React.Component {
       course: this.state.course,
       grade: parseInt(this.state.grade)
     };
+
+    if (this.state.name === '' || this.state.course === '') {
+
+      return false;
+    }
+
+    if (this.state.grade === '' || this.state.grade < 0) {
+
+      return false;
+    }
+
     this.props.newRecord(newRow);
     this.handleReset();
 
@@ -73,7 +84,7 @@ export default class GradeForm extends React.Component {
                 value={coursevalue}
                 type="text"
                 className="form-control"
-                placeholder="course"
+                placeholder="Course"
               />
             </div>
 

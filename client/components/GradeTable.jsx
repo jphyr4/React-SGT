@@ -12,7 +12,7 @@ function GradeTable(props) {
             <th scope="col">Name</th>
             <th scope="col">Course</th>
             <th scope="col">Grade</th>
-            <th className="hideOperation" scope="col">Operations</th>
+            <th className="hideOperation" scope="col">Ops</th>
           </tr>
         </thead>
         <tbody>

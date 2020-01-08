@@ -1,36 +1,6 @@
 {
   "grades": [
     {
-      "name": "Scott Bowler",
-      "course": "Web Development",
-      "grade": 100,
-      "id": 2
-    },
-    {
-      "name": "Tim Davis",
-      "course": "Web Development",
-      "grade": 50,
-      "id": 3
-    },
-    {
-      "name": "Ziyaad",
-      "course": "Algorithm & Design",
-      "grade": 92,
-      "id": 5
-    },
-    {
-      "name": "Jake Hassler",
-      "course": "Algorithm & Design",
-      "grade": 98,
-      "id": 6
-    },
-    {
-      "name": "Khoa",
-      "course": "Algorithm & Design",
-      "grade": 87,
-      "id": 7
-    },
-    {
       "name": "Kris",
       "course": "JavaScript",
       "grade": 94,
@@ -91,24 +61,6 @@
       "id": 17
     },
     {
-      "name": "William",
-      "course": "Web Development",
-      "grade": 78,
-      "id": 18
-    },
-    {
-      "name": "Harry",
-      "course": "Web Development",
-      "grade": 97,
-      "id": 19
-    },
-    {
-      "name": "Lars",
-      "course": "Web Development",
-      "grade": 45,
-      "id": 20
-    },
-    {
       "name": "Cameron",
       "course": "UI Design",
       "grade": 93,
@@ -125,6 +77,24 @@
       "course": "UI Design",
       "grade": 78,
       "id": 24
+    },
+    {
+      "name": "Uzair",
+      "course": "Math",
+      "grade": 100,
+      "id": 25
+    },
+    {
+      "name": "Tim",
+      "course": "Math",
+      "grade": 89,
+      "id": 26
+    },
+    {
+      "name": "Elijah",
+      "course": "Math",
+      "grade": 40,
+      "id": 27
     }
   ]
 }

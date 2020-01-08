@@ -42,6 +42,16 @@ body{
 }
 }
 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+{
+.navFont{
+display: none;
+}
+}
+
 
 
 @media only screen
@@ -62,13 +72,13 @@ body{
   padding-bottom: 12vh;
 }
 
-.hideDelete{
+/* .hideDelete{
   display: none;
 }
 
 .hideOperation{
   display:none;
-}
+} */
 
 .hideAvg{
   display: none;
