@@ -5,20 +5,22 @@ function GradeTable(props) {
 
   const tempArr = props.gradeSent.map((element, index) => <Grade key={index} sending={element} deleteProp={props.deleteProp}/>);
   return (
-    <table className="table table-hover float-left col-md-8">
-      <thead>
-        <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Course</th>
-          <th scope="col">Grade</th>
-          <th scope="col">Operations</th>
-        </tr>
-      </thead>
-      <tbody>
-        {tempArr}
-      </tbody>
+    <div className="table-responsive tablePadding">
+      <table className="table table-hover table-striped tbody text-center">
+        <thead className="thead-dark">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Course</th>
+            <th scope="col">Grade</th>
+            <th className="hideOperation" scope="col">Operations</th>
+          </tr>
+        </thead>
+        <tbody>
+          {tempArr}
+        </tbody>
 
-    </table>
+      </table>
+    </div>
   );
 
 }

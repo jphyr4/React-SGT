@@ -1,20 +1,90 @@
-.tableStyle{
-  float: left;
-  width: 80%;
-}
 
-.inputForms input{
+
+/* .inputForms input{
 
   display: block;
   width: 15%;
 
-}
+} */
 
-.inputForms i{
+/* .inputForms i{
       float: left;
     height: 15px;
     width: 30px;
     padding-top: 11px;
     padding-left: 6px;
+
+} */
+
+.navHeight{
+height: 7vh;
+}
+
+.navBottom{
+  height: 7vh;
+}
+
+/* .tbody{
+  height: 300px;
+} */
+
+body{
+  padding-top: 7vh;
+  padding-bottom: 5vh;
+}
+
+.navFont{
+  color: white;
+
+}
+
+.form-group{
+margin-bottom: 0px !important;
+}
+
+
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+{
+.navBottom{
+  height: 10vh;
+}
+
+body{
+  padding-top: 7vh;
+  padding-bottom: 9vh;
+}
+}
+
+
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+{
+.hideButton{
+  display:none;
+}
+
+.navBottom{
+  height: 14vh;
+}
+
+body{
+  padding-top: 7vh;
+  padding-bottom: 12vh;
+}
+
+.hideDelete{
+  display: none;
+}
+
+.hideOperation{
+  display:none;
+}
 
 }
