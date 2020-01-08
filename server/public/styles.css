@@ -1,21 +1,5 @@
 
 
-/* .inputForms input{
-
-  display: block;
-  width: 15%;
-
-} */
-
-/* .inputForms i{
-      float: left;
-    height: 15px;
-    width: 30px;
-    padding-top: 11px;
-    padding-left: 6px;
-
-} */
-
 .navHeight{
 height: 7vh;
 }
@@ -24,9 +8,6 @@ height: 7vh;
   height: 7vh;
 }
 
-/* .tbody{
-  height: 300px;
-} */
 
 body{
   padding-top: 7vh;
@@ -41,7 +22,6 @@ body{
 .form-group{
 margin-bottom: 0px !important;
 }
-
 
 
 @media only screen
@@ -85,6 +65,47 @@ body{
 
 .hideOperation{
   display:none;
+}
+
+.hideAvg{
+  display: none;
+}
+
+.centerTitle{
+  flex:none;
+  max-width: none;
+}
+
+}
+
+
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape)
+{
+
+  .navHeight{
+    height: 16vh;
+  }
+
+  body {
+    padding-top: 16vh;
+    padding-bottom: 10vh;
+  }
+
+
+.navFont{
+  display: none;
+}
+
+.navBottom{
+  height: 15vh;
+}
+
+.mr-2 {
+  margin-right: 5px !important;
 }
 
 }
