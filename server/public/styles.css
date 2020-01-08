@@ -76,6 +76,10 @@ body{
   max-width: none;
 }
 
+.centerHead{
+  text-align: center;
+}
+
 }
 
 
@@ -107,5 +111,7 @@ and (orientation : landscape)
 .mr-2 {
   margin-right: 5px !important;
 }
+
+
 
 }
