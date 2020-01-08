@@ -6,6 +6,7 @@ export default class GradeForm extends React.Component {
       name: '',
       course: '',
       grade: ''
+
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -43,54 +44,62 @@ export default class GradeForm extends React.Component {
     const gradevalue = this.state.grade;
 
     return (
-      <form
-        className="inputForms"
-        onSubmit={this.handleSubmit}
-        onReset={this.handleReset}
-      >
-        <div className="form-group float-right col-md-4">
-          <i className="fas fa-user"></i>
-          <input
-            name="name"
-            onChange={this.handleChange}
-            value={namevalue}
-            type="text"
-            className="form-control"
-            placeholder="Name"
-          />
-        </div>
 
-        <div className="form-group float-right col-md-4">
-          <i className="fas fa-book"></i>
-          <input
-            name="course"
-            onChange={this.handleChange}
-            value={coursevalue}
-            type="text"
-            className="form-control"
-            placeholder="course"
-          />
-        </div>
+      <nav className="navbar fixed-bottom navbar-dark bg-dark d-flex justify-content-around navBottom">
+        <h4 className="navFont">Add a Student:</h4>
+        <form
+          className="inputForms"
+          onSubmit={this.handleSubmit}
+          onReset={this.handleReset}
+        >
+          <div className="row">
+            <div className="form-group col">
+              {/* <i className="fas fa-user"></i> */}
+              <input
+                name="name"
+                onChange={this.handleChange}
+                value={namevalue}
+                type="text"
+                className="form-control"
+                placeholder="Name"
+              />
+            </div>
 
-        <div className="form-group float-right col-md-4">
-          <i className="fas fa-graduation-cap"></i>
-          <input
-            name="grade"
-            onChange={this.handleChange}
-            value={gradevalue}
-            type="number"
-            className="form-control"
-            placeholder="Grade"
-          />
-        </div>
+            <div className="form-group col">
+              {/* <i className="fas fa-book"></i> */}
+              <input
+                name="course"
+                onChange={this.handleChange}
+                value={coursevalue}
+                type="text"
+                className="form-control"
+                placeholder="course"
+              />
+            </div>
 
-        <button type="reset" className="btn btn-danger mb-2 float-right">
-          Cancel
-        </button>
-        <button type="submit" className="btn btn-primary mb-2 float-right">
-          Add
-        </button>
-      </form>
+            <div className="form-group col">
+              {/* <i className="fas fa-graduation-cap"></i> */}
+              <input
+                name="grade"
+                onChange={this.handleChange}
+                value={gradevalue}
+                type="number"
+                className="form-control"
+                placeholder="Grade"
+              />
+            </div>
+            <div className="col btn-toolbar ">
+              <button type="reset" className="btn btn-danger mb-2 mr-2 hideButton">
+            Cancel
+              </button>
+              <button type="submit" className="btn btn-primary mb-2">
+            Add
+              </button>
+            </div>
+          </div>
+        </form>
+      </nav>
+
     );
   }
 }

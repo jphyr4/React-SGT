@@ -1,12 +1,6 @@
 {
   "grades": [
     {
-      "name": "Dan Paschal",
-      "course": "Web Development",
-      "grade": 100,
-      "id": 1
-    },
-    {
       "name": "Scott Bowler",
       "course": "Web Development",
       "grade": 100,
@@ -53,6 +47,72 @@
       "course": "JavaScript",
       "grade": 93,
       "id": 10
+    },
+    {
+      "name": "Johnathan",
+      "course": "JavaScript",
+      "grade": 89,
+      "id": 11
+    },
+    {
+      "name": "Jimmy",
+      "course": "Wed Design",
+      "grade": 85,
+      "id": 12
+    },
+    {
+      "name": "Dane",
+      "course": "Web Design",
+      "grade": 79,
+      "id": 13
+    },
+    {
+      "name": "Janet",
+      "course": "Web Design",
+      "grade": 67,
+      "id": 14
+    },
+    {
+      "name": "Jack",
+      "course": "PHP",
+      "grade": 80,
+      "id": 15
+    },
+    {
+      "name": "Larry",
+      "course": "PHP",
+      "grade": 67,
+      "id": 16
+    },
+    {
+      "name": "Jane",
+      "course": "PHP",
+      "grade": 94,
+      "id": 17
+    },
+    {
+      "name": "William",
+      "course": "Web Development",
+      "grade": 78,
+      "id": 18
+    },
+    {
+      "name": "Harry",
+      "course": "Web Development",
+      "grade": 97,
+      "id": 19
+    },
+    {
+      "name": "Lars",
+      "course": "Web Development",
+      "grade": 45,
+      "id": 20
+    },
+    {
+      "name": "Cameron",
+      "course": "UI Design",
+      "grade": 93,
+      "id": 21
     }
   ]
 }

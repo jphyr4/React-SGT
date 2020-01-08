@@ -22,7 +22,11 @@ export default class App extends React.Component {
   getGrades() {
     fetch('/api/grades')
       .then(res => res.json())
-      .then(data => this.setState({ grades: data }))
+      .then(data => {
+
+        this.setState({ grades: data });
+
+      })
       .catch(err => console.error('Fetch failed!', err));
 
     this.getAverageGrade();
