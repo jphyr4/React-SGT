@@ -65,7 +65,7 @@ export default class GradeForm extends React.Component {
         >
           <div className="row">
             <div className="form-group col">
-              {/* <i className="fas fa-user"></i> */}
+
               <input
                 name="name"
                 onChange={this.handleChange}
@@ -77,7 +77,7 @@ export default class GradeForm extends React.Component {
             </div>
 
             <div className="form-group col">
-              {/* <i className="fas fa-book"></i> */}
+
               <input
                 name="course"
                 onChange={this.handleChange}
@@ -89,7 +89,7 @@ export default class GradeForm extends React.Component {
             </div>
 
             <div className="form-group col">
-              {/* <i className="fas fa-graduation-cap"></i> */}
+
               <input
                 name="grade"
                 onChange={this.handleChange}

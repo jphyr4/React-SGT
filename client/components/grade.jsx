@@ -13,7 +13,7 @@ function Grade(props) {
       <td className="align-middle">{props.sending.course}</td>
       <td className="align-middle">{props.sending.grade}</td>
       <td className="hideDelete align-middle"><i className="fas fa-times-circle" onClick={deleteEntry}></i></td>
-      {/* <button type="button" className="btn btn-outline-danger" onClick={deleteEntry}>Delete</button> */}
+
     </tr>
 
   );
