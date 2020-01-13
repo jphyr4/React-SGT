@@ -13,7 +13,6 @@
 
 
 
-
 .navFont{
   color: white;
 
@@ -112,12 +111,16 @@ and (orientation : landscape)
   display: none;
 }
 
+/* .hideButton{
+  display: none;
+} */
+
 .navBottom{
   /* height: 15vh; */
 }
 
 .mr-2 {
-  /* margin-right: 5px !important; */
+  margin-right: 5px !important;
 }
 
 }

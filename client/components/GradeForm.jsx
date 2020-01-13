@@ -34,7 +34,7 @@ export default class GradeForm extends React.Component {
       return false;
     }
 
-    if (this.state.grade === '' || this.state.grade < 0) {
+    if (this.state.grade === '' || this.state.grade < 0 || this.state.grade > 100) {
 
       return false;
     }
