@@ -27,3 +27,17 @@ if ($request['method'] === 'POST') {
   $response['body'] = $result;
   send($response);
 }
+
+
+
+if ($request['method'] === 'DELETE') {
+  $rowId = $request['body']['id'];
+
+  $sqlDeleteStudent =
+    "DELETE FROM grades WHERE id = $rowId";
+  // $link->query($sqlDeleteStudent);
+  mysqli_query($link, $sqlDeleteStudent);
+
+  $response['body'] = "The ID is $rowId";
+  send($response);
+}

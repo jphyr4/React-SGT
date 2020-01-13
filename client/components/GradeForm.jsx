@@ -16,7 +16,7 @@ export default class GradeForm extends React.Component {
 
   handleChange(event) {
 
-    let changeState = {};
+    const changeState = {};
     changeState[event.target.name] = event.target.value;
     this.setState(changeState);
   }
@@ -57,7 +57,7 @@ export default class GradeForm extends React.Component {
     return (
 
       <nav className="navbar fixed-bottom navbar-dark bg-dark d-flex justify-content-around navBottom">
-        <h4 className="navFont">Add a Student:</h4>
+        <h4 className="navFont d-none d-md-block">Add a Student:</h4>
         <form
           className="inputForms"
           onSubmit={this.handleSubmit}

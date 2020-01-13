@@ -48,7 +48,8 @@ export default class App extends React.Component {
     const array = [...this.state.grades];
     const index = array.findIndex(x => x.id === id);
     array.splice(index, 1);
-    fetch(`/api/grades/${id}`, {
+    fetch('/api/grades', {
+      body: JSON.stringify({ id: id }),
       headers: { 'Content-Type': 'application/json' },
       method: 'DELETE'
     }).then(response => response.json())
