@@ -4,16 +4,16 @@
 
 }
 .navHeight{
-height: 7vh;
+/* height: 7vh; */
 }
 
 .navBottom{
-  height: 7vh;
+  /* height: 7vh; */
 }
 
 
 body{
-  padding-top: 7vh;
+  /* padding-top: 7vh; */
   padding-bottom: 5vh;
 }
 
@@ -33,12 +33,12 @@ and (max-device-width : 1024px)
 and (orientation : portrait)
 {
 .navBottom{
-  height: 10vh;
+  height: 13vh;
 }
 
 body{
-  padding-top: 7vh;
-  padding-bottom: 9vh;
+  /* padding-top: 7vh; */
+  padding-bottom: 12vh;
 }
 }
 
@@ -49,6 +49,11 @@ and (orientation : landscape)
 {
 .navFont{
 display: none;
+}
+
+body{
+  /* padding-top: 7vh; */
+  padding-bottom: 6vh;
 }
 }
 
@@ -63,22 +68,15 @@ and (orientation : portrait)
   display:none;
 }
 
-.navBottom{
+/* .navBottom{
   height: 14vh;
-}
+} */
 
 body{
-  padding-top: 7vh;
+  /* padding-top: 7vh; */
   padding-bottom: 12vh;
 }
 
-/* .hideDelete{
-  display: none;
-}
-
-.hideOperation{
-  display:none;
-} */
 
 .hideAvg{
   display: none;
@@ -108,8 +106,8 @@ and (orientation : landscape)
   }
 
   body {
-    padding-top: 16vh;
-    padding-bottom: 10vh;
+    /* padding-top: 16vh; */
+    padding-bottom: 13vh;
   }
 
 
@@ -118,13 +116,22 @@ and (orientation : landscape)
 }
 
 .navBottom{
-  height: 15vh;
+  /* height: 15vh; */
 }
 
 .mr-2 {
   margin-right: 5px !important;
 }
 
+}
 
-
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+{
+body {
+    /* padding-top: 16vh; */
+    padding-bottom: 7vh;
+  }
 }
