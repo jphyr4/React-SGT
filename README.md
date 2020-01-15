@@ -1,97 +1,59 @@
-# sgt-react
+# student-grade-table
 
-> - Maintained by: `thebearingedge`
+A full stack JavaScript application for teachers who want to manage course records.
 
-The Student Grade Table: Written in React
+## Technologies Used
 
-## Introduction
+- React.js
+- Webpack 4
+- Bootstrap 4
+- PHP
+- HTML5
+- CSS3
+- AWS EC2
 
-For this project, you will be building a single-page React application that communicates with a server to manipulate data.
+## Live Demo
 
-## Getting Started
-
-1. Fork this repository to your GitHub account and clone it to your local machine.
-2. Check out a `dev` branch and push it to `origin`.
-    ```bash
-    git push origin dev
-    ```
-3. Install all dependencies in `package.json` with NPM.
-    ```bash
-    npm install
-    ```
-
-## NPM Scripts
-
-- `dev` - Start Webpack Dev Server on port `3000` and JSON Server on port `3001`. Visit `http://localhost:3000` in the your browser during development.
-- `build` - Run Webpack to build the React client into `server/public`. This script is generally used for deployment only.
+Try the application live at [https://sgt.jhassler.tech]
 
 ## Features
 
-- [User can view all grades.](features/user-can-view-all-grades.md)
-- [User can view the average grade.](features/user-can-view-the-average-grade.md)
-- [User can add a grade.](features/user-can-add-a-grade.md)
-- [User can delete a grade.](features/user-can-delete-a-grade.md)
+- Teachers can view a list of recorded grades.
+- Teachers can view the average grade.
+- Teachers can add a grade to the table.
+- Teachers can delete a grade from the table.
 
 ## Preview
 
-![SGT React](sgt-react.gif)
+## Development
 
-## Server API
+#### System Requirements
 
-#### `GET /api/grades`
+- NPM 6 or higher
 
-Responds with all recorded `grades`.
+#### Getting Started
 
-##### Example Response Body
+1. Clone the repository.
 
-```json
-[
-  {
-    "id": 1,
-    "name": "Daniel Paschal",
-    "grade": 100,
-    "course": "Web Development"
-  },
-  {
-    "id": 2,
-    "name": "Scott Bowler",
-    "grade": 100,
-    "course": "Web Development"
-  }
-]
-```
+    ```shell
+    git clone https://github.com/jphyr4/React-SGT
+    cd sgt-react
+    ```
 
-#### `POST /api/grades`
+1. Install all dependencies with NPM.
 
-Accepts a single `grade` object in the request body and inserts it into all `grades`. Responds with the inserted `grade`, including an auto-generated `id`.
+    ```shell
+    npm install
+    ```
 
-##### Example Request Body
+1. Import the example database to MongoDB.
 
-```json
-{
-  "name": "Tim Davis",
-  "grade": 50,
-  "course": "Web Development"
-}
-```
+    ```shell
+    npm run db:import
+    ```
 
-##### Example Response Body
+1. Start the project. Once started you can view the application by opening http://localhost:3000 in your browser.
 
-```json
-{
-  "id": 3,
-  "name": "Tim Davis",
-  "grade": 50,
-  "course": "Web Development"
-}
-```
-
-#### `DELETE /api/grades/:id`
-
-Removes a `grade` from all recorded `grades`, given an `id` in the request URL. _e.g._ `/api/grades/3`
-
-##### Example Response Body
-
-```json
-{}
-```
+    ```shell
+    npm run dev
+    ```
