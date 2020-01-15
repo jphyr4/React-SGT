@@ -25,6 +25,8 @@ Try the application live at [https://sgt.jhassler.tech]
 
 ## Preview
 
+![SGTgif](https://user-images.githubusercontent.com/35503354/72465459-10801500-378c-11ea-99d6-ea8b9e213e80.gif)
+
 ## Development
 
 #### System Requirements
