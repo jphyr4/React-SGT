@@ -37,7 +37,7 @@ Try the application live at [https://sgt.jhassler.tech]
 
     ```shell
     git clone https://github.com/jphyr4/React-SGT
-    cd sgt-react
+    cd React-SGT
     ```
 
 1. Install all dependencies with NPM.
