@@ -1,4 +1,4 @@
-# student-grade-table
+# Student Grade Table
 
 A full stack JavaScript application for teachers who want to manage course records.
 
